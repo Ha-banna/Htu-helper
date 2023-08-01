@@ -6,6 +6,15 @@ To see the website go to htu-helper.online
 
 This website is created in Reactjs
 =======
+
+# Dependencies
+
+## npm install jwt-decode
+used to decode jwt tokens from backend
+
+## npm i react-router-dom
+to install the react router which allows for routing in react applications
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
