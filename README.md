@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Htu-helper
 The frontend for a website that recommends courses to HTU students 
 
