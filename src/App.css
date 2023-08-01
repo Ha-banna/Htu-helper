@@ -1,0 +1,404 @@
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+:root {
+	--purple: rgb(183, 0, 255);
+	--pink: rgb(255, 0, 200);
+	--blue: rgb(89, 0, 255);
+  }
+
+  .login > form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+
+  .name-cont{
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	margin-bottom: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+  }
+
+  .name{
+	width: 46%;
+	height: 37px;
+	margin-right: 5px;
+	border-image-source: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+	border-width: 2px;
+	border-image-slice: 1;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+  }
+
+  .input-cont{
+	width:80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
+  
+  .rest {
+	position: relative;
+	height: 40px;
+	width: 100%;
+	margin: auto;
+	font-size: 16px;
+	border-image-source: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+	border-width: 2px;
+	border-image-slice: 1;
+	box-sizing: border-box; /* Add this line */
+	padding-left: 10px;
+  }
+  
+  .submit {
+	background: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+	color: white;
+	width: 100%; /* Set the same width as the input fields */
+	height: 40px;
+	margin: auto;
+	border: none;
+	font-size: 16px;
+	box-sizing: border-box; 
+	cursor: pointer;
+	transition: 0.3s;
+  }  
+
+  .submit:hover {
+	background-color: white;
+	background: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+	-webkit-background-clip: text; /* Set background clip as text for WebKit browsers */
+	-webkit-text-fill-color: transparent; /* Set text color as transparent for WebKit browsers */
+	color: transparent; /* Set text color as transparent for other browsers */
+	width: 100%; /* Set the same width as the input fields */
+	height: 40px;
+	margin: auto;
+	border: 2px solid transparent;
+	font-size: 16px;
+	box-sizing: border-box;
+	cursor: pointer;
+	border-image-source: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+	border-image-slice: 1;
+	box-shadow: 0 0 10px rgb(200, 200, 200);
+	transform: scale(1.01);
+	transition: 0.2s;
+  }
+
+  .login {
+	width: 50%;
+	margin: auto;
+	height: auto;
+	/*margin-top: 5%;*/
+	min-width: 275px;
+	max-width: 700px;
+  }
+
+  .goto-signup{
+	text-align: center;
+	margin-bottom: 0;
+	margin-top: 7px;
+  }
+
+  .error{
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	color: red;
+	align-self: flex-start;
+  }
+
+  .slim{
+	font-weight: 300;
+  }
+
+  .center{
+	text-align: center;
+  }
+
+  .cont{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 75vh;
+  }
+
+  .home {
+text-align: center;
+  }
+
+  .header-button{
+	width: 175px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+  .header-button:hover{
+	width: 200px;
+	height: 40px;
+	border: none;
+	background-color: transparent;
+	color: white;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.5s;
+  }
+
+  nav{
+	display: flex;
+	flex-direction: row;
+	margin-left: 20px;
+	margin-top: 10px;
+  }
+
+  .account-button{
+	background-color: transparent;
+	border: none;
+	position:absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+  }
+
+  .account-img{
+	width: 40px;
+	height: 40px;
+  }
+
+  header {
+	background: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+	height: 80px;
+	margin: 0;
+	display: flex;
+	align-items: center;
+  }
+  
+  .logo {
+	margin: 0;
+	color: white;
+	font-weight: 300;
+	font-size: 2.5em;
+	margin-left: 20px;
+	margin-top: -5px;
+  }
+
+  .menu-icon {
+	display: none; /* Hide the menu icon by default */
+  }
+
+  .add-class{
+	width: 50%;
+  }
+  
+  /* Responsive Styles for Mobile Devices */
+  
+  @media only screen and (max-width: 650px) {
+	.logo {
+	  font-size: 1.8em;
+	}
+
+	.header-button{
+		width: 175px;
+		height: 40px;
+		border: none;
+		background-color: transparent;
+		color: black;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.5s;
+	  }
+	  .header-button:hover{
+		width: 200px;
+		height: 40px;
+		border: none;
+		background-color: transparent;
+		color: black;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.5s;
+	  }
+
+	  .header-button2{
+		width: 175px;
+		height: 40px;
+		border: none;
+		background-color: transparent;
+		color: black;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.5s;
+		padding-left: 10px;
+	  }
+	  .header-button2:hover{
+		width: 200px;
+		height: 40px;
+		padding-right: 35px;
+		border: none;
+		background-color: transparent;
+		color: black;
+		font-size: 16px;
+		cursor: pointer;
+		transition: 0.5s;
+	  }
+
+	  .account-button{
+		background-color: transparent;
+		border: none;
+		cursor: pointer;
+		position: unset;
+		text-align: center;
+		font-size: 16px;
+		width: 200px;
+	  }
+  
+	.menu-icon {
+	  display: block;
+	  cursor: pointer;
+	  color: white;
+	  position: absolute;
+	  right: 10px;
+	  top: 10px;
+	  font-size: 1.5em;
+	}
+  
+	.menu-items {
+	  display: none;
+	}
+  
+	.menu-items.open {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: flex-end;
+	  position: absolute;
+	  top: 80px;
+	  right: 0;
+	  width: 200px;
+	  background-color: #fff;
+	  padding: 20px;
+	  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	}
+  
+	.menu-items.open a {
+	  margin-bottom: 10px;
+	}
+
+	.add-class{
+		margin: auto;
+		width: 90vw;
+	}
+
+	.course-table{
+		width: 100%;
+	  }
+	  .course-table > tr:first-child{
+		text-align: center;
+		background: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+		height: 50px;
+	  }
+	
+	  .course-table > tr:first-child > th{
+		color: white;
+		font-weight: 500;
+		font-size: 16px;
+	  }
+	
+	  .course-table > tr:nth-child(even){
+		text-align: center;
+		height: 50px;
+		font-size: 16px;
+		background-color: rgb(185, 112, 211);
+	  }
+	
+	  .course-table > tr{
+		text-align: center;
+		height: 50px;
+		background-color: rgb(139, 146, 212);
+		font-size: 16px;
+	  }
+	  .bigger{
+		height: 50px;
+		font-size: 18px;
+	  }
+
+	  .add-course{
+		margin: auto;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	  }
+
+	  .name-cont{
+		width: 100%;
+		height: 40px;
+		margin: 0;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	  }
+  }
+
+  .cont2{
+	width: 50%;
+	margin: auto;
+	margin-top: 150px;
+  }
+  
+  .rem-line{
+	text-decoration: none;
+  }
+
+  .add-class{
+	margin: auto;
+  }
+  .add-course{
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 20px;
+  }
+
+  .extra-margin{
+	margin-top: 200px;
+  }
+
+  .course-table{
+	width: 100%;
+  }
+  .course-table > tr:first-child{
+	text-align: center;
+	background: linear-gradient(130deg, var(--blue), var(--purple), var(--pink));
+  }
+
+  .course-table > tr:first-child > th{
+	color: white;
+	font-weight: 300;
+	font-size: 20px;
+  }
+
+  .course-table > tr:nth-child(even){
+	text-align: center;
+	height: 40px;
+	font-size: 16px;
+	background-color: rgb(185, 112, 211);
+  }
+
+  .course-table > tr{
+	text-align: center;
+	height: 40px;
+	background-color: rgb(139, 146, 212);
+	font-size: 16px;
+  }
+
+  .bigger{
+		cursor: pointer;
+  }
+
+  .black{
+	color: black;
+  }
